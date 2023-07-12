@@ -1,0 +1,10 @@
+pragma solidity ^0.8.0;
+
+contract EtherAcceptingContract {
+    receive() external payable {}
+    
+    fallback() external payable {
+        // Handle unrecognized calls or transactions here
+        // This function will be executed if no other function matches the called function signature
+    }
+}
